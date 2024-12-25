@@ -31,7 +31,9 @@ function App() {
     <>
       <div className="container-sm" style={{ marginTop: "48px" }}>
         <h1 style={{ textAlign: "center" }}>Compute Your Final Grade here!</h1>
-        <p style={{ textAlign: "center" }}>Please enter only your raw grades.</p>
+        <p style={{ textAlign: "center" }}>
+          Please enter only your raw grades.
+        </p>
       </div>
 
       <div className="container-sm" style={{ marginTop: "48px" }}>
@@ -87,7 +89,11 @@ function App() {
         className="container-sm"
         style={{ display: "flex", justifyContent: "center", marginTop: "50px" }}
       >
-        <button type="button" className="btn btn-outline-primary" onClick={handleClearGrades}>
+        <button
+          type="button"
+          className="btn btn-outline-primary"
+          onClick={handleClearGrades}
+        >
           Clear Grades
         </button>
       </div>
@@ -98,8 +104,18 @@ function App() {
         prefinal={parseFloat(formValues.prefinalGrade) || 0}
         final={parseFloat(formValues.finalGrade) || 0}
       />
-      <div className="container-sm" style={{ display: "flex", justifyContent: "center", marginTop: "50px" }}>
-        <p>© 2024, Made with love by Reniel Baldove, All rights reserved.</p>
+      <div className="container-sm">
+        <p
+          style={{
+            textAlign: "center",
+            position: "fixed",
+            left: "0",
+            bottom: "0",
+            width: "100%",
+          }}
+        >
+          © 2024, Made with love by Reniel Baldove, All rights reserved.
+        </p>
       </div>
     </>
   );
